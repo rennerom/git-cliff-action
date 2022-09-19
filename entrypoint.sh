@@ -1,7 +1,7 @@
 #!/bin/bash -l
 set -uxo pipefail
 
-OUTPUT=${OUTPUT:="git-cliff/CHANGELOG.md"}
+OUTPUT=${OUTPUT:="$GITHUB_REPOSITORY/CHANGELOG.md"}
 
 # Create the output directory
 mkdir -p "$(dirname $OUTPUT)"
